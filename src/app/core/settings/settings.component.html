@@ -1,0 +1,17 @@
+<div class="settings">
+  <div id="settings-layouts" fxLayout="column" fxLayoutAlign="start start">
+    <div class="title no-margin-top">Layouts: </div>
+
+    <mat-radio-group class="layout-radio-group" (change)="setLayout($event)" fxLayout="column" fxLayoutGap="24px">
+      <mat-radio-button value="alpha">
+        <img class="layout-option-image" src="assets/img/demo/settings/layout_alpha.png">
+      </mat-radio-button>
+      <mat-radio-button value="beta">
+        <img class="layout-option-image" src="assets/img/demo/settings/layout_beta.png">
+      </mat-radio-button>
+      <mat-radio-button value="gamma">
+        <img class="layout-option-image" src="assets/img/demo/settings/layout_gamma.png">
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+@use '@angular/material' as mat;
+@import "../../../../../styles/_var.scss";
+
+:host {
+
+}
+
+.sales-widget {
+  height: 100%;
+
+  .data {
+    @include responsivePadding();
+
+    .group {
+
+      .property {
+
+      }
+
+      .value {
+        font-size: 22px;
+
+        &.primary {
+          color: mat.get-color-from-palette($color-primary);
+        }
+
+        &.accent {
+          color: mat.get-color-from-palette($color-accent);
+        }
+
+        &.warn {
+          color: mat.get-color-from-palette($color-warn);
+        }
+      }
+    }
+  }
+
+  .chart {
+    @include responsivePaddingHalf(top);
+  }
+}

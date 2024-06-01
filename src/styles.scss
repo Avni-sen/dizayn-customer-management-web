@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import "normalize.css/normalize.css";
+$fa-font-path: "/assets/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome.scss";
+
+@import "highlight.js/styles/androidstudio.css";
+
+@import "styles/var";
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy(mat.define-typography-config());`
+@include mat.all-component-typographies();
+@include mat.core();
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($theme);
+
+@import "styles/misc";
+@import "styles/card";
+@import "styles/boxed";
+@import "styles/tabs";
+@import "styles/badges";
+@import "styles/helpers";
+@import "styles/tables";
+@import "styles/tour";
+@import "styles/elevation";
+@import "styles/components/sidenav";
+@import "styles/components/quickpanel";
+@import "styles/components/toolbar";
+@import "styles/components/dashboard";
+@import "styles/pages/profile";
+@import "styles/pages/form-wizard";
+@import "styles/pages/chat";
+@import "styles/layouts/layout-alpha";
+@import "styles/layouts/layout-beta";
+@import "styles/layouts/layout-gamma";
+@import "styles/pages/components";

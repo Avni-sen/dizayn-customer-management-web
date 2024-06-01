@@ -1,0 +1,17 @@
+.quickpanel-container, .sidenav-container {
+  overflow-y: hidden !important;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+.quickpanel .mat-tab-body-wrapper {
+  height: 100%;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+.quickpanel .mat-tab-labels {
+  /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+  .mat-tab-label {
+    flex: 1;
+  }
+}

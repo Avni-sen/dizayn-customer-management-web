@@ -1,0 +1,46 @@
+@use '@angular/material' as mat;
+.dashboard {
+
+  .dashboard-tabs {
+    height: 100%;
+
+    > .mat-mdc-tab-header {
+      background: white;
+      border-bottom: none;
+      z-index: 10;
+      padding: 0 $padding__page;
+      @include lt-sm {  padding: 0 $padding__page__small;  }
+      @include mat.elevation(2);
+      /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+      /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+      /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+      .mat-tab-labels {
+        /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+        /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+        .mat-tab-label {
+          font-weight: 400;
+          color: #737373;
+          opacity: 1;
+          /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+          &.mat-tab-label-active {
+            font-weight: 500;
+            color: #000;
+          }
+        }
+      }
+    }
+    /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+    /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+    .mat-tab-body-wrapper {
+      height: 100%;
+
+      .mat-mdc-tab-body {
+        height: 100%;
+        /* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version. */
+        .mat-tab-body-content {
+          overflow-x: hidden;
+        }
+      }
+    }
+  }
+}
